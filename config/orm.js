@@ -1,8 +1,6 @@
 //Import MySQL connection
 var connection = require("../config/connection.js");
 
-//LOOK AT CAT HELPER FUNCTIONS
-//DO YOU NEED THESE?
 
 //Object for SQL statement functions
 var orm = {

@@ -12,10 +12,9 @@ var burgerModels = {
     });
   },
   update: function(condition, cb) {
-    orm.updateOne("devoured", "1", condition, function(res){
+    orm.updateOne("devoured", true, condition, function(res){
       cb(res);
     });
   }
 }
-
 module.exports = burgerModels;
