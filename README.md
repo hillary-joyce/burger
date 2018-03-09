@@ -12,4 +12,3 @@ Heroku: (link to be inserted)
 - JavaScript
 - jQuery
 - AJAX
-x

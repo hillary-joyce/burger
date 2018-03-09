@@ -1,27 +1,41 @@
-<h1>Eat the donut</h1>
-<div class="donuts-new">
-  <h2>donuts to Try: </h2>
-    <ul>
-      {{#each donuts}}
-        {{#unless devoured}}
-          <li>
-            {{donut_name}}
-            <button type="button" class="devour-it" data-id="{{this.id}}">Devour It</button>
-          </li>
-        {{/unless}}
-      {{/each}}
-    </ul>
-    <h2> Devoured donuts </h2>
-      {{#each donuts}}
-        {{#if devoured}}
-          <li>
-            {{donut_name}}
-          </li>
-        {{/if}}
-      {{/each}}
-    <form class="add-donut" action="index.html" method="post">
-      <label for="new-donut-name">New donut Name:</label>
-      <input type="text" id="donutName">
-      <button type="button" id="submit">Add donut</button>
-    </form>
+<div class="header">
+  <img src="/assets/images/donut.png" alt="">
+  <h1 class="main-title">Donut Devour</h1>
+  <p class="page-tag-line">Donuts. Go Nuts.</p>
 </div>
+  <div class="container">
+    <div class="row">
+      <div class="six columns content-div">
+        <h2>Donuts to Try </h2>
+        <ul>
+          {{#each donuts}}
+            {{#unless devoured}}
+              <li>
+                {{donut_name}}
+                <button type="button" class="devour-it" data-id="{{this.id}}">Devour It</button>
+              </li>
+            {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
+      <div class="six columns content-div">
+        <h2> Devoured donuts </h2>
+        {{#each donuts}}
+          {{#if devoured}}
+            <li>
+              {{donut_name}}
+            </li>
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+    <div class="form-div">
+        <h2>Add a New Donut</h2>
+        <form class="add-donut" action="index.html" method="post">
+          <label for="new-donut-name">New donut Name:</label>
+          <input type="text" id="donutName">
+          <button type="button" id="submit">Add donut</button>
+        </form>
+    </div>
+  </div>
+  <footer><a href="https://www.freepik.com/free-vector/donut-illustrations_1110486.htm">Designed by Freepik</a></footer>

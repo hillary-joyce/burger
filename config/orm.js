@@ -11,7 +11,6 @@ var orm = {
         throw err;
       }
       cb(result);
-      console.log(result);
     });
   },
 
@@ -23,7 +22,6 @@ var orm = {
         throw err;
       }
       cb(result);
-      console.log("donut added");
     });
   },
   //Update a donut - change from not devoured to devoured
@@ -35,7 +33,6 @@ var orm = {
           throw err;
         }
         cb(result);
-        console.log("donut updated");
       });
     }
 };

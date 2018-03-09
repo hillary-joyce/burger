@@ -11,7 +11,6 @@ router.get("/", function(req, res){
     var alldonutData = {
       donuts: data
     };
-    console.log(alldonutData);
     //render all donut data for handlebars
     res.render("index", alldonutData);
   });
@@ -28,14 +27,12 @@ router.post("/api/donut", function(req, res){
 //Route to update a donut when it is "devoured"
 router.put("/api/donut/:id", function(req, res) {
   var id = req.params.id;
-  console.log(id);
   donut_models.update(id, function(result){
     if (result.changedRows == 0){
       return res.status(404).end();
     } else {
       res.status(200).end();
     }
-    console.log("donut devoured");
   });
 });
 
