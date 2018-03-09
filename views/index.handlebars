@@ -1,27 +1,27 @@
-<h1>Eat the Burger</h1>
-<div class="burgers-new">
-  <h2>Burgers to Try: </h2>
+<h1>Eat the donut</h1>
+<div class="donuts-new">
+  <h2>donuts to Try: </h2>
     <ul>
-      {{#each burgers}}
+      {{#each donuts}}
         {{#unless devoured}}
           <li>
-            {{burger_name}}
+            {{donut_name}}
             <button type="button" class="devour-it" data-id="{{this.id}}">Devour It</button>
           </li>
         {{/unless}}
       {{/each}}
     </ul>
-    <h2> Devoured Burgers </h2>
-      {{#each burgers}}
+    <h2> Devoured donuts </h2>
+      {{#each donuts}}
         {{#if devoured}}
           <li>
-            {{burger_name}}
+            {{donut_name}}
           </li>
         {{/if}}
       {{/each}}
-    <form class="add-burger" action="index.html" method="post">
-      <label for="new-burger-name">New Burger Name:</label>
-      <input type="text" id="burgerName">
-      <button type="button" id="submit">Add Burger</button>
+    <form class="add-donut" action="index.html" method="post">
+      <label for="new-donut-name">New donut Name:</label>
+      <input type="text" id="donutName">
+      <button type="button" id="submit">Add donut</button>
     </form>
 </div>

@@ -1,8 +1,8 @@
 var orm = require("../config/orm.js");
 
-var burgerModels = {
+var donutModels = {
   all: function(cb) {
-    orm.selectAll("burgers", function(res) {
+    orm.selectAll("donuts", function(res) {
       cb(res);
     });
   },
@@ -17,4 +17,4 @@ var burgerModels = {
     });
   }
 }
-module.exports = burgerModels;
+module.exports = donutModels;
