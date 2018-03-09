@@ -19,7 +19,7 @@ router.get("/", function(req, res){
 
 //Route to create a new burger when entered by the user
 router.post("/api/burger", function(req, res){
-  burger_models.create(req.body.name, function(result){
+  burger_models.create(req.body.burger_name, function(result){
     //send back the id of the newly created burger
     res.json({ id: result.insertId});
   });
@@ -35,7 +35,7 @@ router.put("/api/burger/:id", function(req, res) {
     } else {
       res.status(200).end();
     }
-    console.log(allBurgerData);
+    console.log("burger devoured");
   });
 });
 

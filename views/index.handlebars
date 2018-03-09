@@ -11,9 +11,17 @@
         {{/unless}}
       {{/each}}
     </ul>
+    <h2> Devoured Burgers </h2>
+      {{#each burgers}}
+        {{#if devoured}}
+          <li>
+            {{burger_name}}
+          </li>
+        {{/if}}
+      {{/each}}
     <form class="add-burger" action="index.html" method="post">
       <label for="new-burger-name">New Burger Name:</label>
       <input type="text" id="burgerName">
-      <button type="button" id="submit"></button>
+      <button type="button" id="submit">Add Burger</button>
     </form>
 </div>
