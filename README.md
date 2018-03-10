@@ -8,5 +8,5 @@ Create new flavors, store them in a database and when you're ready to devour jus
 Donut Devour runs on Node js and Express. It uses a mySQL database powered by JawsDB MySQL.
 The front-end uses Handlebars, CSS3, and CSS Skeleton.
 
-Donut image designed by [Freepik] (https://www.freepik.com/free-vector/donut-illustrations_1110486.htm)
+Donut image designed by [Freepik](https://www.freepik.com/free-vector/donut-illustrations_1110486.htm)
 
